@@ -1,0 +1,90 @@
+{
+  "name": "coco-sync",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Common": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        },
+        "Rojo": {
+          "$className": "Folder",
+          "Plugin": {
+            "$path": "src/plugin/src"
+          },
+          "Packages": {
+            "$className": "Folder",
+            "Log": {
+              "$path": "src/plugin/log"
+            },
+            "Http": {
+              "$path": "src/plugin/http"
+            },
+            "Fmt": {
+              "$path": "src/plugin/fmt"
+            },
+            "RbxDom": {
+              "$path": "src/plugin/rbx_dom_lua"
+            }
+          }
+
+        }
+      }
+    },
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "Baseplate": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Color": [
+            0.38823,
+            0.37254,
+            0.38823
+          ],
+          "Locked": true,
+          "Position": [
+            0,
+            -10,
+            0
+          ],
+          "Size": [
+            512,
+            20,
+            512
+          ]
+        }
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "Ambient": [
+          0,
+          0,
+          0
+        ],
+        "Brightness": 2,
+        "GlobalShadows": true,
+        "Outlines": false,
+        "Technology": "Voxel"
+      }
+    },
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}
